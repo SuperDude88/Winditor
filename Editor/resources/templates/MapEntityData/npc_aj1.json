@@ -11,14 +11,14 @@
       "ToolTip": "",
       "DataType": "Enum",
       "EnumValues": {
-        0: "Unknown 0",
-        1: "Unknown 1",
-        2: "Unknown 2",
-        255: "Unknown 255",
+        0: "Explains Targeting",
+        1: "Talks about papers",
+        2: "Talks about monsters and fairies",
+        255: "Invalid",
       }
     },
     {
-      "Name": "Unknown Switch",
+      "Name": "Unknown Switch", //Used in daNpc_Aj1_c::init_AJ1_0
       "ValueSource": "Parameters",
       "Mask": 0x0000FF00,
       "Hidden": false,
