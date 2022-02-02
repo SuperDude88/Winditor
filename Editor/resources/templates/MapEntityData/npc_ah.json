@@ -3,21 +3,33 @@
   "ParentClassOverride": "Actor",
   "ParameterFields": [
     {
-      "Name": "Unknown_1",
+      "Name": "Behavior Type",
       "ValueSource": "Parameters",
       "Mask": 0x000000FF,
       "Hidden": false,
       "Category": "npc_ah",
-      "ToolTip": "",
-      "DataType": "Integer"
+      "ToolTip": "Determines the message to display. The Ho-Ho at Link's Oasis checks if the Big Octo was defeated, and the one on Outset Island checks if the stone head blocking Savage Labyrinth was destroyed. The Ho-Ho at Two-Eye Reef checks the disable spawn switch.",
+      "DataType": "Enum"
+      "EnumValues": {
+        0: "Bomb Island",
+        1: "Flight Control Platform",
+        2: "Outset Island",
+        3: "Forsaken Fortress",
+        4: "Crescent Moon Island",
+        5: "Link's Oasis",
+        6: "Northern Fairy Island",
+        7: "Horseshoe Island",
+        8: "Stone Watcher Island",
+        9: "Two-Eye Reef"
+      }
     },
     {
-      "Name": "Unknown_2",
+      "Name": "Disable Spawn Switch",
       "ValueSource": "Parameters",
       "Mask": 0x0000FF00,
       "Hidden": false,
       "Category": "npc_ah",
-      "ToolTip": "",
+      "ToolTip": "Only checked for the Two-Eye reef Ho-Ho.",
       "DataType": "Integer"
     }
   ]
