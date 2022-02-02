@@ -3,24 +3,24 @@
   "ParentClassOverride": "Actor",
   "ParameterFields": [
     {
-      "Name": "Behavior Type",
+      "Name": "Which Message ID",
       "ValueSource": "Parameters",
       "Mask": 0x000000FF,
       "Hidden": false,
-      "Category": "npc_ah",
-      "ToolTip": "Determines the message to display. The Ho-Ho at Link's Oasis checks if the Big Octo was defeated, and the one on Outset Island checks if the stone head blocking Savage Labyrinth was destroyed. The Ho-Ho at Two-Eye Reef checks the disable spawn switch.",
-      "DataType": "Enum"
+      "Category": "Old Man Ho-Ho",
+      "ToolTip": "Affects which message Old Man Ho-Ho says when you talk to him.\nAlso affects whether Old Man Ho-Ho disappears once a switch is set - see Disable Spawn Switch's tooltip for more information.",
+      "DataType": "Enum",
       "EnumValues": {
-        0: "Bomb Island",
-        1: "Flight Control Platform",
-        2: "Outset Island",
-        3: "Forsaken Fortress",
-        4: "Crescent Moon Island",
-        5: "Link's Oasis",
-        6: "Northern Fairy Island",
-        7: "Horseshoe Island",
-        8: "Stone Watcher Island",
-        9: "Two-Eye Reef"
+        0: "Message ID 14001",
+        1: "Message ID 14002",
+        2: "Message ID 14003",
+        3: "Message ID 14004",
+        4: "Message ID 14005",
+        5: "Message ID 14006",
+        6: "Message ID 14007",
+        7: "Message ID 14008",
+        8: "Message ID 14009",
+        9: "Message ID 14010",
       }
     },
     {
@@ -28,8 +28,8 @@
       "ValueSource": "Parameters",
       "Mask": 0x0000FF00,
       "Hidden": false,
-      "Category": "npc_ah",
-      "ToolTip": "Only checked for the Two-Eye reef Ho-Ho.",
+      "Category": "Old Man Ho-Ho",
+      "ToolTip": "This parameter is only used for the Old Man Ho-Ho who says message 14010.\nThe one that says message 14003 uses a hardcoded disable spawn switch of 108.\nThe one that says message 14006 uses a hardcoded disable spawn switch of 16.",
       "DataType": "Integer"
     }
   ]
